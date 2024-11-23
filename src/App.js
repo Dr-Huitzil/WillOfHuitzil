@@ -1,12 +1,15 @@
 import React from "react";
 import StarsAnimation from "./Background/StarsAnimation";
-import Name from "./Sections/Name";
+import Content from "./Content"
+
 
 const App = () => (
     <div style={{ height: "100vh", overflow: "hidden", backgroundColor: "#000" }}>
-        <StarsAnimation>
-            <Name />
-        </StarsAnimation>
+        <StarsAnimation />
+
+        <div className="content">
+            <Content />
+        </div>
     </div>
 );
 

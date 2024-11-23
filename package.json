@@ -1,6 +1,7 @@
 {
-  "name": "will-of-huitzil",
+  "name": "willofhuitzil",
   "version": "0.1.0",
+  "description": "resume of the portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
