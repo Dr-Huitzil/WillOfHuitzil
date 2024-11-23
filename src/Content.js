@@ -1,11 +1,10 @@
 import React from "react";
+import Name from "./Sections/Name";
 
 const Content = () => {
     return (
-        <div className="name">
-            <h1>Ivan</h1>
-            <h3>Alier-Reyes</h3>
-            <button>tesk Click</button>
+        <div>
+            <Name />
         </div>
     )
 };
