@@ -1,0 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensures no unwanted scrollbars */
+}
+
+.content {
+    position: relative; /* Makes content appear above the animation */
+    z-index: 1; /* Higher than the background */
+    color: white; /* Ensures text is visible over the black background */
+    padding: 20px; /* Optional: Add spacing */
+}

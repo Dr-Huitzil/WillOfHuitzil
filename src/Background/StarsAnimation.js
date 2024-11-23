@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import "./StarsAnimation.css";
 
 //constants
 const PARTICLE_COUNT = 40;
@@ -80,7 +81,7 @@ const StarsAnimation = () => {
                 this.x = random(-0.25, 1.25, true);
                 this.y = random(-0.25, 1.25, true);
                 this.z = random(0, 2, true);
-                this.opacity = random(0.001, 0.01, true);
+                this.opacity = random(0.01, 0.1, true);
                 this.vx = random(-MOTION, MOTION, true);
                 this.vy = random(-MOTION, MOTION, true);
             }
@@ -138,8 +139,7 @@ const StarsAnimation = () => {
         const handleResize = () => {
             resizeCanvas();
             init();
-            ;
-        }
+        };
 
         //Set up canvas and animation
         resizeCanvas();
@@ -153,7 +153,7 @@ const StarsAnimation = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-    return <canvas ref={canvasRef} style={{ display: "block", width: "100%", height: "100%" }} />;
+    return <canvas ref={canvasRef} className="stars-animation" />;
 };
 
 export default StarsAnimation;
